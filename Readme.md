@@ -57,7 +57,7 @@ Aura-Ecommerce/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Aura-Ecommerce.git
+git clone https://github.com/Nibeditasahuu/Aura-Ecommerce.git
 ```
 
 ### 2. Open the Project
