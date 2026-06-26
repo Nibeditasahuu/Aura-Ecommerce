@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Premium Tech Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <div class="logo">
+            Aura
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div class="cart-icon">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span id="cart-count">0</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <h1>Premium Technology<br>Built For Everyone.</h1>
+
+        <p>
+            Discover the latest smartphones,
+            laptops and accessories with a premium shopping experience.
+        </p>
+
+        <button class="btn">
+            Shop Now
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <div class="container search-container">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Search products...">
+
+        <select id="category">
+
+            <option value="all">All Categories</option>
+
+            <option value="phone">Phones</option>
+
+            <option value="laptop">Laptops</option>
+
+            <option value="watch">Watches</option>
+
+            <option value="audio">Audio</option>
+
+            <option value="accessory">Accessories</option>
+
+        </select>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products" class="products">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Featured Products
+
+        </h2>
+
+        <div id="product-list" class="product-grid">
+
+            <!-- Products from JavaScript -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCT MODAL ================= -->
+
+<div class="modal" id="product-modal">
+
+    <div class="modal-content">
+
+        <span class="close" id="close-modal">
+
+            &times;
+
+        </span>
+
+        <div id="product-details">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= CART ================= -->
+
+<div class="cart-sidebar" id="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="close-cart">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div id="cart-items">
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+
+            Total :
+
+            ₹<span id="cart-total">0</span>
+
+        </h3>
+
+        <button id="checkout-btn">
+
+            Checkout
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= CHECKOUT ================= -->
+
+<div class="modal" id="checkout-modal">
+
+    <div class="modal-content checkout-box">
+
+        <span class="close" id="close-checkout">
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            Checkout
+
+        </h2>
+
+        <form id="checkout-form">
+
+            <input
+            type="text"
+            placeholder="Full Name"
+            required>
+
+            <input
+            type="email"
+            placeholder="Email"
+            required>
+
+            <input
+            type="tel"
+            placeholder="Phone Number"
+            required>
+
+            <textarea
+            placeholder="Delivery Address"
+            required></textarea>
+
+            <button type="submit">
+
+                Place Order
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ================= SUCCESS ================= -->
+
+<div class="success-popup" id="success-popup">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <h2>
+
+        Order Placed Successfully
+
+    </h2>
+
+    <p>
+
+        Thank you for shopping with Aura.
+
+    </p>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="container footer">
+
+        <div>
+
+            <h3>Aura</h3>
+
+            <p>
+                Premium Technology Store.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <ul>
+
+                <li>Home</li>
+
+                <li>Products</li>
+
+                <li>About</li>
+
+                <li>Contact</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+
+                support@aura.com
+
+            </p>
+
+            <p>
+
+                +91 9876543210
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 Aura. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- ================= JS ================= -->
+
+<script src="data.js"></script>
+
+<script src="cart.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
